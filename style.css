@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-titulo-subtitulo: "Young Serif", serif;
+    --fonte-texto: "Outfit", serif;
+    --cor-subtitulo:  hsl(14, 45%, 36%);
+    --cor-titulo-tempo-preparacao: hsl(332, 51%, 32%);
+    --cor-fundo-card-receita: hsl(0, 0%, 100%);
+    --cor-fundo-tempo-preparacao: hsl(330, 100%, 98%);
+    --cor-fundo-body: hsl(30, 54%, 90%);
+    --cor-textos: hsl(30, 10%, 34%);
+    --cor-titulo-principal: hsl(24, 5%, 18%);
+}
+
+body{
+    background-color: var(--cor-fundo-body);
+    padding: 150px 0px;
+}
+
+main{
+    background-color: var(--cor-fundo-card-receita);
+    border-radius: 32px;
+    padding: 40px;
+    width: 43%;
+    margin: 0 auto;
+    
+}
+
+main img{
+    width: 100%;
+    border-radius: 26px;
+    margin-bottom: 20px;
+
+}
+main .omelette h1{
+    color: var(--cor-titulo-principal);
+    font-family: var(--fonte-titulo-subtitulo);
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+main .omelette p{
+    color: var(--cor-textos);
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main .tempo-preparacao{
+    background-color: var( --cor-fundo-tempo-preparacao);
+    border-radius: 12px;
+    padding: 22px 18px;
+    margin-bottom: 20px;
+}
+
+main .tempo-preparacao h3{
+    color: var(--cor-titulo-tempo-preparacao);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main li{
+    margin-left: 25px;
+    font-family: var(--fonte-texto);
+    margin-bottom: 10px;
+}
+
+main h2{
+    color: var(--cor-subtitulo);
+    font-family: var(--fonte-titulo-subtitulo);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+main hr{
+    margin: 20px 0;
+}
+
+main .nutricao p{
+    color: var(--cor-textos);
+    font-family: var(--fonte-texto);
+    margin-bottom: 20px;
+}
+
+main .nutricao div{
+    color: var(--cor-textos);
+    font-family: var(--cor-textos);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+ main .nutricao div .valor{
+    color: var(--cor-subtitulo);
+    font-weight: 700;
+}
+
+@media only screen and (max-width:1392px){
+    main .omelette h1{ font-size: 30px;}
+}
+
+@media only screen and (max-width:1008px){
+    body{padding: 0;}
+    main{width: 100%;}
+    main .omelette h1{ font-size: 20px;}
+    
+}
+
